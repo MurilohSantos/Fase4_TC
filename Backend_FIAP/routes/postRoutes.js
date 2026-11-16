@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/postController');
+const { authenticate, requireProfessor } = require('../middleware');
+router.get('/search', controller.searchPostByAssunto);
+router.get('/', controller.getAllPosts);
+router.get('/:id', controller.getPostById);
+router.post('/', authenticate, requireProfessor, controller.createPost);
+router.put('/:id', authenticate, requireProfessor, controller.updatePost);
+router.delete('/:id', authenticate, requireProfessor, controller.deletePost);
+module.exports = router;

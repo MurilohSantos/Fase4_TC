@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "FIAP Plataforma Educacional",
+    "slug": "fiap-plataforma-educacional",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f7f7f8"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ed145b"
+      },
+      "package": "br.com.fiap.plataformaeducacional"
+    }
+  }
+}
